@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+  <head>
+    <title>Video Live Stream</title>
+    <style>
+      img {
+        display: block;
+        margin-left:auto ;
+        margin-right: auto;
+      }
+    </style>
+    <script>
+  function toggleImage() {
+    var image = document.getElementById("myImage");
+    if (image.style.display === "none") {
+      image.style.display = "block";
+    } else {
+      image.style.display = "none";
+    }
+  }
+</script>
+  </head>
+  <body>
+    <h1>Video Live Stream</h1>
+    <!-- <img src="{% url 'video_feed' %}"> -->
+    <!-- <img src="{% url 'webcam_feed' %}"> -->
+     <img id="myImage" src="{% url 'mask_feed' %}">
+     <button onclick="toggleImage()">Show/Hide </button>
+<!--	<img src="{% url 'livecam_feed' %}">-->
+<script>
+  
+</script>
+  </body>
+</html>
